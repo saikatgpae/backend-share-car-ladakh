@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.listen(8000, () => console.log('API running on port 5001'));
+app.listen(8000, () => console.log('API running on port 8000'));
 
 app.get('/', (req, res) => res.json('App is running 😎'))
 
