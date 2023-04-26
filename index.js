@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import mysql from mysql;
+import mysql from 'mysql';
 // var mysql = require('mysql');
 
 const app = express();
