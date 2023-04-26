@@ -26,5 +26,5 @@ con.connect(function(err) {
 });
 
 app.get('/', function(req, res){
-  res.send(data);
+  res.send('hello world!');
 });
