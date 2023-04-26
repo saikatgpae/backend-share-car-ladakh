@@ -38,4 +38,7 @@ con.connect(function(err) {
 
 app.listen(8000, () => console.log('API running on port 8000'));
 
-app.get('/', (req, res) => res.json(data));
+app.get('/', (req, res) => {
+  res.send(data);
+  // res.json(data);
+});
