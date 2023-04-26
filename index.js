@@ -21,7 +21,7 @@ con.connect(function(err) {
   con.query("SELECT * FROM cars", function (err, result, fields) {
     if (err) throw err;
     data = result;
-    console.log(result);
+    // console.log(result);
   });
 });
 
