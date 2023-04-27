@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import mysql from 'mysql';
-// var mysql = require('mysql');
 
 const app = express();
 app.use(cors());
@@ -21,24 +20,12 @@ con.connect(function(err) {
   con.query("SELECT * FROM cars", function (err, result, fields) {
     if (err) throw err;
     data = result;
-    // console.log(result);
   });
 });
 
-
-
-
-// import express from 'express';
-// import cors from 'cors';
-// import bodyParser from 'body-parser';
-// import ip from 'ip';
-// const app = express();
-// app.use(cors());
-// app.use(bodyParser.json());
-
 app.listen(8000, () => console.log('API running on port 8000'));
 
-app.get('/', (req, res) => {
+app.get('/car-data', (req, res) => {
   res.send(data);
   // res.json(data);
 });
