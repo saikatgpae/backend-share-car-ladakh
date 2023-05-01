@@ -1,3 +1,6 @@
+ssh -i "cab.cer" ubuntu@ec2-13-233-99-238.ap-south-1.compute.amazonaws.com
+
+
 CREATE TABLE invoices (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), phone INT);
 
 current_date DATETIME);
