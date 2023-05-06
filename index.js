@@ -23,7 +23,7 @@ con.connect(function(err) {
   });
 });
 
-app.listen(8000, () => console.log('API running on port 8000'));
+app.listen(443, () => console.log('API running on port 8000'));
 
 app.get('/car-data', (req, res) => {
   res.send(data);
